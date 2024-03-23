@@ -73,8 +73,8 @@
 % For your project's heading (2 inputs: Name, Date)
 \newcommand{\resumeProjectHeading}[2]{
     \vspace{-2pt}\item
-    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -109,7 +109,6 @@
 
 %-----Social Links-----
 \begin{center}
-    % Links without icons
     \href{mailto:jobs@gyaneshshah.com}{\hspace{-0.5em} \ \small \underline{jobs@gyaneshshah.com} \quad} % Email Hyperlinked
     \href{https://www.linkedin.com/in/gyanesh-shah/}{\hspace{-0.5em} \ \small \underline{linkedin.com/in/gyanesh-shah} \quad} % LinkedIn Hyperlinked
     \href{https://github.com/gyaneshshah}{\hspace{-0.5em} \ \small \underline{github.com/gyaneshshah} \quad} % GitHub Hyperlinked
@@ -141,8 +140,9 @@
    \item{
      \textbf{Programming and Scripting:}{ Python, C/C++, Java, SQL (Postgres), JavaScript, HTML5/CSS} \\
      \textbf{Machine Learning:}{ Regression, SVM, Clustering, Deep learning (CNNs, RNNs), A/B testing} \\
-     \textbf{Tools and Software:}{ Git, GitHub, MATLAB, VS Code, PyCharm, Jupyter Notebook, Atom, Tableau} \\
-     \textbf{Libraries:}{ pandas, NumPy, Matplotlib, OpenCV, Scikit-learn, keras, TensorFlow, NLTK}
+     %\textbf{Tools and Software:}{ Git, GitHub, MATLAB, VS Code, PyCharm, Jupyter Notebook, Atom, Tableau}
+     \textbf{Libraries:}{ pandas, NumPy, Matplotlib, OpenCV, Scikit-learn, keras, TensorFlow, NLTK} \\
+     \textbf{Tools and Software:}{ Git, GitHub, MATLAB, Tableau} 
    }
  \resumeSubHeadingListEnd
 %----------------
@@ -155,8 +155,9 @@
             {In Vivo Functional Onco-Imaging (IVFOI) Facility, UCI}{Jul 2023 -- Present}
             {Researcher}{Irvine, CA}
         \resumeItemListStart
-            \resumeItem{Deployed a \textbf{Google Colab} based supervised model using \textbf{OpenCV} and \textbf{scikit-learn} to accurately detect tumors from Photomagnetic Imaging temperature maps.}
-            \resumeItem{Rectified dataset bias and fine-tuned model parameters, increasing the accuracy by 4\%.}
+            %\resumeItem{Optimized a \textbf{Google Colab} based supervised model using \textbf{OpenCV} and \textbf{scikit-learn} to accurately detect tumors from Photomagnetic Imaging temperature maps.}
+            %\resumeItem{Rectified dataset bias and fine-tuned model parameters, increasing the accuracy by 4\%.}
+            \resumeItem{Enhanced tumor detection in Photomagnetic imaging temperature maps by 4\%, mitigating dataset bias and refining model parameters, leveraging \textbf{OpenCV} and \textbf{scikit-learn}, showing expertise in data rectification and fine-tuning.}
             \resumeItem{Developed a modified \textbf{U-Net}  \textbf{deep learning} algorithm for \textbf{semantic segmentation}, achieving up to 96\% accuracy in tumor detection.}
             \resumeItem{Implemented three dimensional tumor reconstruction using Multi-View Convolutional Neural Networks\textbf{ (CNNs)}.}
         \resumeItemListEnd
@@ -178,7 +179,7 @@
     \resumeSubHeadingListStart
         
         \resumeProjectHeading
-        { \href{https://sites.uci.edu/mengprojects/advantech-4/}{\textbf{IoT-based Floral Farm Monitoring System}} }{Jan 2023 -- Jun 2023}
+        { \href{https://sites.uci.edu/mengprojects/advantech-4/}{IoT-based Floral Farm Monitoring System} } {Jan 2023 -- Jun 2023}
         \resumeItemListStart
             \resumeItem{Collaborated with a cross-functional team in developing an innovative IoT-based Floral Farm Monitoring System.}
             \resumeItem{Engineered an autonomous sunflower farm monitoring robot using \textbf{Raspberry Pi}, applying \textbf{Python} and \textbf{OpenCV} for precise navigation across varied terrains.}
@@ -187,7 +188,7 @@
         \resumeItemListEnd
         
         \resumeProjectHeading
-        {\textbf{Stock Market Prediction using LSTM and Social Media Insights}}{Nov 2021 -- May 2022}
+        {Stock Market Prediction using LSTM and Social Media Insights}{Nov 2021 -- May 2022}
         \resumeItemListStart
             \resumeItem{Devised an \textbf{LSTM}-based stock market predictor achieving 81.3\% accuracy, integrating social media data.}
             \resumeItem{Analyzed stock data from \textbf{Yahoo Finance API}, improving the model's predictive capabilities by 24\%.}
@@ -204,6 +205,7 @@
         \resumeItemListStart
             \resumeCertificateItem{Data-Based Engineering Product Decision-Making, UCI Samueli School of Engineering}{Jun 2023}
             \resumeCertificateItem{Building a Skill Assessed Product Team, UCI Samueli School of Engineering}{Jun 2023}
+            \resumeCertificateItem{Visualizing Filters of a CNN using TensorFlow, Coursera}{Dec 2023}
         \resumeItemListEnd
     
     \resumeSubHeadingListEnd
@@ -214,7 +216,9 @@
     \resumeSubHeadingListStart
     
         \resumeItemListStart
-            \resumeItem{M. Algariwi, J. S. Saraswatula, R. R. Pathare, Y. Zang, \textbf{G. Shah}, A. Eresen, G. Gulsen, F. Nouizi, \href{https://www.mdpi.com/2306-5354/11/2/126}{\textit{“Self-Guided Algorithm for Fast Image Reconstruction in Photo-Magnetic Imaging: Artificial Intelligence-Assisted Approach”, MDPI bioengineering (2024)}}}
+            %\resumeItem{M. Algariwi, J. S. Saraswatula, R. R. Pathare, Y. Zang, \textbf{G. Shah}, A. Eresen, G. Gulsen, F. Nouizi, \href{https://www.mdpi.com/2306-5354/11/2/126}{\textit{“Self-Guided Algorithm for Fast Image Reconstruction in Photo-Magnetic Imaging: Artificial Intelligence-Assisted Approach”, MDPI bioengineering (2024)}}}
+
+            \resumeItem{\href{https://www.mdpi.com/2306-5354/11/2/126}{“Self-Guided Algorithm for Fast Image Reconstruction in Photo-Magnetic Imaging: Artificial Intelligence-Assisted Approach”, \textit{MDPI bioengineering (2024)}}}
         \resumeItemListEnd
    
  \resumeSubHeadingListEnd
