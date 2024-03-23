@@ -1,0 +1,35 @@
+name: Convert LaTeX to PDF
+
+on:
+  push:
+    paths:
+      - 'main.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Install LaTeX
+      run: sudo apt-get install texlive texlive-latex-extra
+      
+    - name: Compile LaTeX to PDF
+      run: pdflatex -interaction=nonstopmode main.tex
+      
+    - name: Move PDF to root directory
+      run: mv main.pdf Portfolio_Website_Resume.pdf
+      
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add .
+        git commit -m "Update PDF"
+      
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.TOKEN }}
