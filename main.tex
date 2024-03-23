@@ -1,0 +1,224 @@
+\documentclass[letterpaper,11pt]{article}
+
+%-----Meta Information-----
+\title{Gyanesh-Shah-Resume}
+\author{Gyanesh Shah}
+\date{\today}
+%--------------------------
+
+%-----Packages-----
+\usepackage{fontawesome5} % For all types of icons
+\usepackage{graphicx} % For scaling icons and symbols
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+%------------------
+
+%-----Margins & Style-----
+\addtolength{\oddsidemargin}{-0.47in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+%-------------------------
+
+%-----Sections formatting-----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+%-----------------------------
+
+%-----Make ATS Parsable----- 
+\pdfgentounicode=1
+\input{glyphtounicode}
+%---------------------------
+
+%-----Custom commands-----
+
+% resumeItem
+% For your bullet points (1 input only)
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% resumeSubheading
+% For your Education and Experience heading (4 inputs: Company/College Name, Date, Role/DegreeName, Location) 
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% resumeProjectHeading
+% For your project's heading (2 inputs: Name, Date)
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% resumeCertificateItem
+% For your certificates items (2 inputs: Name, Date) [Different than Project heading cause of the itemized bullet points and the first input not being bold]
+\newcommand{\resumeCertificateItem}[2]{
+  \item\small{
+    {#1} \hfill \textbf{\small #2 \vspace{-2pt}}
+  }
+}
+
+% List and Item formatting
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------
+
+%-----Beginning of the Document-----
+\begin{document}
+
+%-----Name Heading-----
+\begin{center}
+    \textbf{\Huge Gyanesh Amish Shah} \\ \vspace{-5pt}
+\end{center}
+%----------------------
+
+%-----Social Links-----
+\begin{center}
+    % Links without icons
+    \href{mailto:jobs@gyaneshshah.com}{\hspace{-0.5em} \ \small \underline{jobs@gyaneshshah.com} \quad} % Email Hyperlinked
+    \href{https://www.linkedin.com/in/gyanesh-shah/}{\hspace{-0.5em} \ \small \underline{linkedin.com/in/gyanesh-shah} \quad} % LinkedIn Hyperlinked
+    \href{https://github.com/gyaneshshah}{\hspace{-0.5em} \ \small \underline{github.com/gyaneshshah} \quad} % GitHub Hyperlinked
+\end{center}
+%----------------------
+
+%-----Education-----
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of California, Irvine (GPA: 3.75/4)}{Sep 2022 -- Dec 2023} 
+            {Master of Engineering in Electrical Engineering and Computer Science}{Irvine, CA}
+            \item{
+            {\small\textbf{Relevant Courses:}{ Machine Learning, Digital Image Processing, Random Processes}
+            }}
+        \resumeSubheading
+            {Thadomal Shahani Engineering College (GPA: 8.68/10)}{Aug 2018 -- May 2022}
+            {Bachelor of Engineering in Electronics and Telecommunications}{Mumbai, MH}
+            \item{
+            {\small\textbf{Relevant Courses:}{ OOP using JAVA, Database Management, Big Data Analytics, Data Compression \& Encryption}
+            }}
+
+    \resumeSubHeadingListEnd
+%-------------------
+
+%-----Skills-----
+\section{Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Programming and Scripting:}{ Python, C/C++, Java, SQL (Postgres), JavaScript, HTML5/CSS} \\
+     \textbf{Machine Learning:}{ Regression, SVM, Clustering, Deep learning (CNNs, RNNs), A/B testing} \\
+     \textbf{Tools and Software:}{ Git, GitHub, MATLAB, VS Code, PyCharm, Jupyter Notebook, Atom, Tableau} \\
+     \textbf{Libraries:}{ pandas, NumPy, Matplotlib, OpenCV, Scikit-learn, keras, TensorFlow, NLTK}
+   }
+ \resumeSubHeadingListEnd
+%----------------
+
+%-----Experience-----
+\section{Experience}
+    \resumeSubHeadingListStart
+        
+        \resumeSubheading
+            {In Vivo Functional Onco-Imaging (IVFOI) Facility, UCI}{Jul 2023 -- Present}
+            {Researcher}{Irvine, CA}
+        \resumeItemListStart
+            \resumeItem{Deployed a \textbf{Google Colab} based supervised model using \textbf{OpenCV} and \textbf{scikit-learn} to accurately detect tumors from Photomagnetic Imaging temperature maps.}
+            \resumeItem{Rectified dataset bias and fine-tuned model parameters, increasing the accuracy by 4\%.}
+            \resumeItem{Developed a modified \textbf{U-Net}  \textbf{deep learning} algorithm for \textbf{semantic segmentation}, achieving up to 96\% accuracy in tumor detection.}
+            \resumeItem{Implemented three dimensional tumor reconstruction using Multi-View Convolutional Neural Networks\textbf{ (CNNs)}.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+            {\href{https://linktr.ee/interviewsandarticles}{War Against Covid}}{Apr 2021 -- Jun 2021}
+            {Co-Founder}{Mumbai, MH}
+        \resumeItemListStart
+            \resumeItem{Co-founded War Against Covid amidst the second wave, combating COVID-19 resource shortages in India.}
+            \resumeItem{Led a multifaceted team of over \textbf{100 volunteers}, developing a web application (\textbf{Node.js} hosted on Digital Ocean) disseminating critical COVID-19 resource information and fostering awareness.}
+            \resumeItem{Connected \textbf{2500+} individuals to verified resources, garnering recognition from Forbes and other esteemed journals.}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+%--------------------
+
+%-----Projects-----
+\section{Projects}
+    \resumeSubHeadingListStart
+        
+        \resumeProjectHeading
+        { \href{https://sites.uci.edu/mengprojects/advantech-4/}{\textbf{IoT-based Floral Farm Monitoring System}} }{Jan 2023 -- Jun 2023}
+        \resumeItemListStart
+            \resumeItem{Collaborated with a cross-functional team in developing an innovative IoT-based Floral Farm Monitoring System.}
+            \resumeItem{Engineered an autonomous sunflower farm monitoring robot using \textbf{Raspberry Pi}, applying \textbf{Python} and \textbf{OpenCV} for precise navigation across varied terrains.}
+            \resumeItem{Optimised \textbf{VGG-19} \textbf{transfer learning} for sunflower weed detection, integrating images via \textbf{Google Drive API}.}
+            \resumeItem{Transformed floral weed management achieving over 50\% cost reduction compared to industry standard methods.}
+        \resumeItemListEnd
+        
+        \resumeProjectHeading
+        {\textbf{Stock Market Prediction using LSTM and Social Media Insights}}{Nov 2021 -- May 2022}
+        \resumeItemListStart
+            \resumeItem{Devised an \textbf{LSTM}-based stock market predictor achieving 81.3\% accuracy, integrating social media data.}
+            \resumeItem{Analyzed stock data from \textbf{Yahoo Finance API}, improving the model's predictive capabilities by 24\%.}
+            \resumeItem{Employed Tweepy for Twitter \textbf{data extraction} and \textbf{NLTK} for \textbf{sentiment analysis}, enhancing model insights.}
+        \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+%------------------
+
+%-----Certifications-----
+\section{Certifications}
+    \resumeSubHeadingListStart
+        
+        \resumeItemListStart
+            \resumeCertificateItem{Data-Based Engineering Product Decision-Making, UCI Samueli School of Engineering}{Jun 2023}
+            \resumeCertificateItem{Building a Skill Assessed Product Team, UCI Samueli School of Engineering}{Jun 2023}
+        \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+%------------------------
+
+%-----Publications-----
+\section{Publications}
+    \resumeSubHeadingListStart
+    
+        \resumeItemListStart
+            \resumeItem{M. Algariwi, J. S. Saraswatula, R. R. Pathare, Y. Zang, \textbf{G. Shah}, A. Eresen, G. Gulsen, F. Nouizi, \href{https://www.mdpi.com/2306-5354/11/2/126}{\textit{“Self-Guided Algorithm for Fast Image Reconstruction in Photo-Magnetic Imaging: Artificial Intelligence-Assisted Approach”, MDPI bioengineering (2024)}}}
+        \resumeItemListEnd
+   
+ \resumeSubHeadingListEnd
+%----------------------
+
+\end{document}
+&-----End of Document-----
